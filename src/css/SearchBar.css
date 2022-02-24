@@ -1,0 +1,77 @@
+.Searchbar_container{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.Searchbar{
+    display: flex;
+    position: relative;
+    column-gap: 10px;
+    height: 32px;
+    background-color:transparent;
+}
+ .Searchbar > input{
+    width: 200px;
+    height: 100%;
+    background:#fafafa;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    padding: 0px 10px;
+    align-self: center;
+    color: #8b7d77;
+    border-radius: 4px;
+}
+
+.Searchbar > button{
+    height: 100%;
+    width: 70px;
+    border: none;
+    background-color: #c62828;
+    font-size: 13px;
+    border-radius: 4px;
+    color: white;
+    align-self: center;
+    box-shadow: 0px 2px 2px 0px #c62828;
+    transition: .3s ease-in-out;
+}
+
+div .Searchbar > button:hover{
+    background-color: #e53935;
+}
+
+
+  
+  .tooltiptext {
+    display : none;
+    font-size: 13px;
+    font-weight: 300;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    box-shadow: 0 3px 10px 0px #212121 ;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    top: 120%;
+    z-index: 1;
+    animation: fadeIn; 
+    animation-duration: 1.5s;
+  }
+
+  .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+  .fa-triangle-exclamation{
+      margin-right : 6px;
+      color: #c62828;
+  }

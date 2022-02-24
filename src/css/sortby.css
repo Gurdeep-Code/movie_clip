@@ -1,0 +1,21 @@
+.sortby{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:30px;
+    padding-right: 30px;
+}
+div .sortby > h2{
+    text-transform: capitalize;
+    margin: 0px;
+    color: white;
+    font-weight: 300;
+}
+
+.sortbySelect{
+    outline: none;
+    padding: 0px 5px;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0px #212121 ;
+}
+

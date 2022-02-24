@@ -1,0 +1,29 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.Appname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    font-size: 23px;
+}
+
+.Applogo{
+    width: 42px;
+    height: 42px;
+    margin: 10px;
+    
+}
+.Brand{
+    display: flex;
+    flex-direction: row;
+}
