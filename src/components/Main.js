@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import TrailerSection from './TrailerSection';
 import MoviesSection from './MoviesSection';
 import DetailsSection from './DetailsSection';
-import SearchBar from './SearchBar';
 
 function Main() {
     const [showVideo, setshowVideo] = useState(false);

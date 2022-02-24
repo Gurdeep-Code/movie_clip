@@ -14,7 +14,6 @@ function SearchBar() {
   }
 
   const handleSubmit = (e) => {
-    moviePage(false)
     if (searchkey != "") {
     dispatch(fetchMoviesInfo(searchkey))
     }
