@@ -3,7 +3,7 @@ import '../css/SearchBar.css';
 import { fetchMoviesInfo } from '../redux/fetchMovies/moviesAction';
 import { useDispatch } from 'react-redux';
 
-function SearchBar({moviePage}) {
+function SearchBar() {
   const dispatch = useDispatch();
   const [searchkey, setsearchkey] = useState("");
   const invalidRef = useRef(null);
@@ -17,7 +17,6 @@ function SearchBar({moviePage}) {
     moviePage(false)
     if (searchkey != "") {
     dispatch(fetchMoviesInfo(searchkey))
-    setsearchkey(""); 
     }
     else{
       invalidRef.current.style.display = "inline-block";

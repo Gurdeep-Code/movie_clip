@@ -25,12 +25,10 @@ function Main() {
     }
     else if (showVideo == true) {
         return (<div><TrailerSection trailersHandler= {trailersHandler} trailersPayload={payload}/></div>);
-        <SearchBar moviePage ={trailersHandler}/>
     }
     else if (showDetails == true)
     {
         return (<div><DetailsSection detailsHandler ={detailsHandler}  detailsPayload={payload}/></div>);
-        <SearchBar moviePage ={detailsHandler}/>
     }
 }
 
