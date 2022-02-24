@@ -17,7 +17,7 @@ function SearchBar({moviePage}) {
     moviePage(false)
     if (searchkey != "") {
     dispatch(fetchMoviesInfo(searchkey))
-    setsearchkey("");
+    setsearchkey(""); 
     }
     else{
       invalidRef.current.style.display = "inline-block";
