@@ -19,3 +19,18 @@ div .sortby > h2{
     box-shadow: 0 3px 10px 0px #212121 ;
 }
 
+@media only screen and (max-width: 430px) {
+    div .sortby > h2{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .sortby{
+        padding-left:4px;
+        padding-right:4px;
+    }
+    .sortbySelect{
+     height: 27px;
+    }
+}
+
+

@@ -4,7 +4,7 @@
     background-color: #212121;
     color: white;
     padding: 10px;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
     justify-content: space-between;
 }
@@ -14,16 +14,27 @@
     flex-direction: row;
     align-items: center;
     margin: 0px;
-    font-size: 23px;
 }
 
 .Applogo{
     width: 42px;
     height: 42px;
-    margin: 10px;
-    
+    margin: 10px;  
 }
+
 .Brand{
     display: flex;
     flex-direction: row;
 }
+
+@media only screen and (max-width: 430px) {
+    .Navbar {
+        font-size: 17px;
+        padding: 4px;
+    }
+    .Applogo{
+        width: 38px;
+        height: 38px;
+        margin: 8px;  
+    }
+  }

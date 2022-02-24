@@ -17,18 +17,17 @@
 .closevideo{
     border: none;
     outline: none;
-    height: 36px;
-    width: 36px;
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
     color: white;
     background-color: transparent;
     position:absolute;
-    top: 12px;
-    right: 12px;
+    top: 15px;
+    right: 18px;
     transition: .3s ease-in-out;
 }
 
 .closevideo:hover{
+    transform: rotate(90deg);
     color: #e53935;
 }

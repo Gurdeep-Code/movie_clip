@@ -40,8 +40,9 @@ function SearchBar() {
     <div className='Searchbar_container'>
       <form onSubmit={handleSubmit} className='Searchbar'>
         <input type="text" placeholder='Search' value={searchkey} onChange={handleSearchKey} onFocus={focusHandler}/>
-        <button type="submit" >Search</button>
-        <span ref={invalidRef} class="tooltiptext"><i class="fa-solid fa-triangle-exclamation"></i>Please fill out this field</span>
+        <button className="largeButton"  type="submit" >Search</button>
+        <button className="mobileButton" type="submit" ><i className="fa-solid fa-magnifying-glass"></i></button>
+        <span ref={invalidRef} className="tooltiptext"><i className="fa-solid fa-triangle-exclamation"></i>Please fill out this field</span>
       </form>
     </div>
   );

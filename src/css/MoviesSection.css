@@ -14,3 +14,10 @@
     justify-content: space-evenly;
     gap: 30px 24px;
 }
+
+@media only screen and (max-width: 430px) {
+    .MoviesSection{
+        padding: 25px;
+        gap: 25px;
+    }  
+}
