@@ -7,8 +7,8 @@ function Navbar() {
 
   return <div className='Navbar'>
     <div className='Brand'>
-      <img className='Applogo'src={logo} />
-      <p className='Appname'>Movie db</p>
+      <img className='Applogo'src={logo} alt='Logo'/>
+      <p className='Appname'>Movie</p>
     </div>
   
     <SearchBar />

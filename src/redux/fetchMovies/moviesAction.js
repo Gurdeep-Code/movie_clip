@@ -41,12 +41,11 @@ export const fetchMoviesInfo = (searchKey,sortbyKey,currentPage) => {
 
             .then(response => {
                 const moviesInfo = response.data.results;
-                console.log(response.data.results);
+                console.log("Responce",response.data.results);
                 dispatch(fetchMoviesSuccess(moviesInfo));
             })
             .catch(error => {
                 const errorMsg = error.message;
-                console.log(errorMsg);
                 dispatch(fetchMoviesFailure(errorMsg));
             })
     }
@@ -60,7 +59,7 @@ export const fetchVideoInfo = (movieId) => {
         axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${api_key}&append_to_response=videos`)
             .then(response => {
                 const videoInfo = response.data.videos.results;
-                console.log(response.data);
+                // console.log(response.data);
                 dispatch(fetchVideoSuccess (videoInfo));
             })
             .catch(error => {

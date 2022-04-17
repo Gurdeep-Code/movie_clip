@@ -4,13 +4,13 @@ import MoviesSection from './MoviesSection';
 import DetailsSection from './DetailsSection';
 
 function Main() {
-    const [showVideo, setshowVideo] = useState(false);
+    const [showTrailer, setshowTrailer] = useState(false);
     const [showDetails, setshowDetails] = useState(false);
     const [payload,setPayload]= useState('');
 
 
     const trailersHandler = (isvideoActive,trailersPayload) => {
-        setshowVideo(isvideoActive);
+        setshowTrailer(isvideoActive);
         setPayload(trailersPayload);
     }
 
@@ -19,15 +19,15 @@ function Main() {
         setPayload(detailsPayload);
     }
 
-    if (showVideo == false && showDetails == false) {
-        return <div><MoviesSection trailersHandler= {trailersHandler} detailsHandler ={detailsHandler} /></div>
+    if (showTrailer == false && showDetails == false) {
+        return (<div><MoviesSection trailersHandler= {trailersHandler} detailsHandler ={detailsHandler} /></div>);
     }
-    else if (showVideo == true) {
+    else if (showTrailer == true) {
         return (<div><TrailerSection trailersHandler= {trailersHandler} trailersPayload={payload}/></div>);
     }
     else if (showDetails == true)
     {
-        return (<div><DetailsSection detailsHandler ={detailsHandler}  detailsPayload={payload}/></div>);
+        return (<div><DetailsSection trailersHandler= {trailersHandler} detailsHandler ={detailsHandler}  detailsPayload={payload}/></div>);
     }
 }
 

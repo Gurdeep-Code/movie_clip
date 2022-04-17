@@ -57,7 +57,7 @@ div .cardSection1 >button:hover{
 .MovieName{
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color:white;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -83,19 +83,20 @@ div .cardSection1 >button:hover{
 
 .starRatingContainer{
     display: flex;
-    justify-content: space-between;
+    column-gap: 14px;
+    color: white;
 }
 
 .starRating{
-
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 
 div .favoriteHeart > span i{
     text-shadow: 0px 0px 8px #212121 ;
     transition: .3s ease-in-out;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 430px) {

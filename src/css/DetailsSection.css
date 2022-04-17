@@ -1,52 +1,87 @@
-.MovieDetailsContainer{
+.MovieDetailsContainer {
     display: flex;
+    position: relative;
     flex-direction: row;
-    padding: 20px 30px ;
-    border-bottom: 1px solid lightgray;
-    justify-content: center;
+    padding: 35px 35px;
+    column-gap: 30px;
 }
 
-.MovieDetailsImage{
-    object-fit: cover;
-    height: 352px;
-    box-shadow: 0 3px 10px 0 #aaa ;
+.MovieDetailsImage {
+    width: 340px;
+    height: 500px;
+    box-shadow: 0 4px 12px 0px #212121;
 }
 
-.MovieDetailsInfo{
+.MovieDetailsInfo {
     display: flex;
     flex-direction: column;
-    margin:20px;
+    row-gap: 10px;
+    justify-content: flex-end;
+    padding-bottom: 35px;
 }
 
-.MovieDetailsName{
-    font-size: 30px;
-    font-weight: 600;
-     color: black;
-     margin: 10px 0;
-     white-space: nowrap;
-     text-overflow: ellipsis;
-     overflow: hidden;
-}
-
-.MovieSubDetails{
-    font-size: 14px;
-    font-weight: 400;
-    color: black;
-    margin: 4px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
-    text-transform: capitalize;
-}
-.closespan{
-    font-size: 15px;
+.MovieDetailsName {
+    display: flex;
+    flex-direction: row;
+    font-size: 45px;
     font-weight: 500;
-    color: black;
-    background-color: lightgray;
-    height: fit-content;
-    padding: 8px;
-    border-radius:50%;
-    cursor: pointer;
-    opacity: 0.8;
+    color: white;
+    white-space: nowrap;
+    column-gap: 5px;
+    justify-content: space-between;
 }
 
+.MovieSubDetails {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: justify;
+}
+
+.MovieDetailsInfo>button {
+    height: 35px;
+    width: 110px;
+    border: none;
+    background-color: #c62828;
+    font-size: 14px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0px 2px 2px 0px #c62828;
+    transition: .3s ease-in-out;
+}
+
+.MovieDetailsInfo>button:hover {
+    background-color: #e53935;
+}
+
+@media only screen and (max-width: 768px) {
+    .MovieDetailsContainer {
+        flex-wrap: wrap;
+        padding: 20px;
+        row-gap: 15px;
+        justify-content: space-evenly;
+    }
+
+    .MovieDetailsImage {
+        width: 290px;
+        height: 420px;
+    }
+
+    .MovieDetailsInfo {
+        row-gap: 12px;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+    }
+
+    .MovieDetailsName {
+        font-size: 25px;
+        font-weight: 400;
+        color: white;
+        white-space: normal;
+    }
+
+    .MovieSubDetails {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

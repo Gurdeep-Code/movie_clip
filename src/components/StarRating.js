@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/MovieCard.css'
 
-function StarRating({rating}) {
+function StarRating({rating,numericRating}) {
 const ratingPercent = rating*10;
 const ratingPercent1 = {
     backgroundImage: `linear-gradient(90deg, orange ${ratingPercent}%, grey ${100-ratingPercent}%)`,
@@ -16,6 +16,7 @@ const ratingPercent1 = {
                 <i className="fa-solid fa-star fa-xs"></i>
                 <i className="fa-solid fa-star fa-xs"></i>
             </span>
+            {numericRating && <span>{rating}</span>}
         </div>
     );
 }

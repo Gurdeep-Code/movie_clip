@@ -14,4 +14,4 @@ function Sortby({ sortTypeHandler,sortType,updatePage }) {
         </div>
     )
 }
-export default Sortby
+export default Sortby;
